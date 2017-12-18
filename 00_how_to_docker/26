@@ -1,0 +1,3 @@
+#!/usr/bin/env sh
+
+docker-machine ssh Char "docker service create --replicas 2 -e OC_USERNAME=billy -e OC_PASSWD=billy --name engineering-bay --network overmind 42school/engineering-bay"
